@@ -14,12 +14,8 @@ const CalcShow: React.FC = () => {
     if (result === "") {
       return;
     }
-    console.log("Expression" + result);
     try {
-      console.log("Before calculation : " + result);
       const res = evaluate(result);
-      console.log("Result" + res);
-
       updateResult(res);
     } catch (error) {}
   }
