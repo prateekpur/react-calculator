@@ -1,14 +1,10 @@
 import React, { useContext } from 'react';
-import { CalcContext } from './CalcContext';
+import { useCalcContext } from './CalcContext';
 
 const StringConsumer: React.FC = () => {
-  const context = useContext(CalcContext);
 
-  if (!context) {
-    throw new Error('StringConsumer must be used within a StringProvider');
-  }
 
-  const { result, updateResult } = context;
+  const { result, updateResult } = useCalcContext();
 
   const handleChangeString = () => {
     updateResult('New Updated String');

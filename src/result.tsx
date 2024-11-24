@@ -1,6 +1,6 @@
 "use client";
 
-import { CalcContext, useCalcContext } from "./CalcContext";
+import { useCalcContext } from "./CalcContext";
 
 function Result() {
   const resultStyle = {
@@ -21,8 +21,7 @@ function Result() {
     flex: 1,
   };
 
-
-  const { result } = useCalcContext();
+  const { result, updateResult } = useCalcContext();
 
   return (
     <div>
