@@ -4,7 +4,7 @@ import { useCalcContext } from './CalcContext';
 const CalcDisplay: React.FC = () => {
   const { result } = useCalcContext();
 
-  return <p>Current value: {result}</p>;
+  return <input type='text' value={result}></input>;
 };
 
 export default CalcDisplay;

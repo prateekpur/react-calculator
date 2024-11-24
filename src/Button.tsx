@@ -20,6 +20,21 @@ export const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
         border: "px solid #BF4F74",
         borderRadius: "5px",
     };
+
+    const getColor = (status: string): string => {
+      switch (text) {
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+          return 'orange';
+        case '=':
+        case '<-':
+          return 'red';
+        default:
+          return 'lighblue';
+      }
+    };
     const handleClick = () => {
         onClick(text); // Pass the text back to the parent
     };
@@ -31,8 +46,9 @@ export const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
         }
     };
 
+
     return (
-      <button onClick={handleClick} onKeyDown={handleKeyDown} className="button1">
+      <button onClick={handleClick} onKeyDown={handleKeyDown} style={{backgroundColor: getColor(text)}} className="button">
         {text}
       </button>
     );

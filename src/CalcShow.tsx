@@ -45,7 +45,7 @@ const CalcShow: React.FC = () => {
   };
   
   return (
-      <div tabIndex={0} onKeyDown={onEnterKey} style={{ display: "flex", flexWrap: "wrap", maxWidth: "350px", justifyContent: "center", alignItems: "center"}}>
+      <div tabIndex={0} onKeyDown={onEnterKey} style={{ display: "flex", flexWrap: "wrap", maxWidth: "350px"}}>
       {[...CalcButtons, ...Operators].map((item, index) => (
           <ActionButton text={item} key={`${item}-${index}`} />
         ))}
