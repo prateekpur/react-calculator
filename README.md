@@ -10,10 +10,6 @@ This is a calculator app using React and TypeScript. It performs basic operation
 
 - Addition, subtraction, multiplication, and division operations.
 
-### Operations Not Allowed
-
-- If the result has been calculated, it can only be edited by using operators. The result cannot be directly edited by adding numbers or using the backspace.
-
 ### Getting Started
 
 To get a local copy up and running, follow these steps:
