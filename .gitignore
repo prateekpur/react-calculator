@@ -6,6 +6,7 @@ logs
 **/*.back.*
 
 node_modules
+.yarn
 bower_components
 
 *.sublime*
