@@ -1,4 +1,3 @@
-"use client";
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 type CalcContextType = {
@@ -20,7 +19,7 @@ type CalcProviderProps = {
   children: ReactNode;
 };
 
-export const CalcProvider: React.FC<CalcProviderProps> = ({ children }) => {
+const CalcProvider: React.FC<CalcProviderProps> = ({ children }) => {
   const [result, setResult] = useState<string>("");
 
   const updateResult = (val: string) => {
@@ -33,3 +32,5 @@ export const CalcProvider: React.FC<CalcProviderProps> = ({ children }) => {
     </CalcContext.Provider>
   );
 };
+
+export default CalcProvider;

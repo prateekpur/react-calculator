@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button } from "./Button";
-import { useCalcContext } from "./CalcContext";
+import { useCalcContext } from "./context/Calculator";
 import { evaluate } from "mathjs";
 
 export const ResultButton: React.FC = () => {
