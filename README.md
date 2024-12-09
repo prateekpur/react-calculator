@@ -4,6 +4,8 @@ This is a calculator app using React and TypeScript. It performs basic operation
 
 ![Calculator](./calculator_page.png "Calculator")
 
+<img src="./calculator_page.png" height="400px" width="auto" />
+
 **Page**: [https://prateekpur.github.io/reactcalculator_typescript/](https://prateekpur.github.io/reactcalculator_typescript/)
 
 ### Operations Supported

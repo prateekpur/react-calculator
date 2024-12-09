@@ -23,16 +23,17 @@ code {
 .container {
   justify-content: center;
   align-items: center;
-  width: "100vw";
+  max-width: 275px;
 }
 
 .result {
-  width: 260px;
+  caret-color: transparent;
   height: 40px;
+  width: 100%;
 }
 
 .buttonWrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 350px;
+  max-width: 100%;
 }
