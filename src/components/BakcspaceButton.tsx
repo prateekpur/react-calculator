@@ -4,10 +4,10 @@ import { BaseButton } from "./BaseButton";
 import { useCalcContext } from "../context/Calculator";
 
 export const BakcspaceButton: React.FC = () => {
-  const { result, updateResult } = useCalcContext();
+  const { displayValue, updateDisplayValue } = useCalcContext();
   const handleDel = () => {
-    if (typeof result === "string") {
-      updateResult(result.slice(0, -1));
+    if (typeof displayValue === "string") {
+      updateDisplayValue(displayValue.slice(0, -1));
     }
   };
 

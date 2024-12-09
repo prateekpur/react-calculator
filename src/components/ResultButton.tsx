@@ -2,17 +2,15 @@ import React from "react";
 
 import { BaseButton } from "./BaseButton";
 import { useCalcContext } from "../context/Calculator";
-import { evaluate } from "mathjs";
 
 export const ResultButton: React.FC = () => {
-  const { result, updateResult } = useCalcContext();
+  const { displayValue, evaluateResult } = useCalcContext();
   function getRes() {
-    if (result === "") {
+    if (displayValue === "") {
       return;
     }
     try {
-      const res = evaluate(result);
-      updateResult(res);
+      evaluateResult();
     } catch (error) {}
   }
 

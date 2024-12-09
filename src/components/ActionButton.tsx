@@ -8,14 +8,14 @@ type ActionButtonProps = {
 };
 
 export const ActionButton: React.FC<ActionButtonProps> = ({ text }) => {
-  const { result, updateResult } = useCalcContext();
+  const { displayValue, updateDisplayValue } = useCalcContext();
 
   const handleClick = (val: string) => {
-    if (typeof result === "string") {
-      updateResult(result + val);
+    if (typeof displayValue === "string") {
+      updateDisplayValue(displayValue + val);
     } else {
       if (val === "+" || val === "-" || val === "*" || val === "/") {
-        updateResult(result + val);
+        updateDisplayValue(displayValue + val);
       }
     }
   };
