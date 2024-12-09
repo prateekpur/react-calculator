@@ -1,4 +1,4 @@
-# reactcalculator_typescript
+# react-calculator
 
 This is a calculator app using React and TypeScript. It performs basic operations.
 

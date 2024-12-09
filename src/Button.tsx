@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./index";
 
 type ButtonProps = {
@@ -21,16 +22,14 @@ export const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
         return "lighblue";
     }
   };
+
   const handleClick = () => {
     onClick(text);
   };
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {};
-
   return (
     <button
       onClick={handleClick}
-      onKeyDown={handleKeyDown}
       style={{ backgroundColor: getColor(text) }}
       className="button"
     >

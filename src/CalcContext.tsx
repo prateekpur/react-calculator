@@ -1,5 +1,5 @@
 "use client";
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, ReactNode } from "react";
 
 type CalcContextType = {
   result: string;
@@ -11,7 +11,7 @@ const CalcContext = createContext<CalcContextType | undefined>(undefined);
 export const useCalcContext = () => {
   const context = useContext(CalcContext);
   if (!context) {
-    throw new Error('No context found');
+    throw new Error("No context found");
   }
   return context;
 };
@@ -21,7 +21,7 @@ type CalcProviderProps = {
 };
 
 export const CalcProvider: React.FC<CalcProviderProps> = ({ children }) => {
-  const [result, setResult] = useState<string>('');
+  const [result, setResult] = useState<string>("");
 
   const updateResult = (val: string) => {
     setResult(val);
