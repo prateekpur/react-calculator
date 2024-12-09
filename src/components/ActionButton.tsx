@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Button } from "./Button";
-import { useCalcContext } from "./context/Calculator";
+import { Button } from "../BaseButton";
+import { useCalcContext } from "../context/Calculator";
 
 type ActionButtonProps = {
   text: string;

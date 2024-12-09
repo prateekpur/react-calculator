@@ -1,16 +1,16 @@
 import React from "react";
 
-import CalcDisplay from "./CalculatorDisplay";
-import CalcShow from "../CalcShow";
-import CalcProvider from "../context/Calculator";
+import CalculatorDisplay from "./CalculatorDisplay";
+import CalculatorKeysSection from "./CalculatorKeysSection";
+import CalculatorProvider from "../context/Calculator";
 
 const Calculator: React.FC = () => (
-  <CalcProvider>
-    <div className="container">
-      <CalcDisplay />
-      <CalcShow />
-    </div>
-  </CalcProvider>
+  <div className="container">
+    <CalculatorProvider>
+      <CalculatorDisplay />
+      <CalculatorKeysSection />
+    </CalculatorProvider>
+  </div>
 );
 
 export default Calculator;
