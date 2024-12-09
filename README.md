@@ -2,11 +2,9 @@
 
 This is a calculator app using React and TypeScript. It performs basic operations.
 
-![Calculator](./calculator_page.png "Calculator")
+<img src="./calculator_page.png" height="600px" width="auto" />
 
-<img src="./calculator_page.png" height="400px" width="auto" />
-
-**Page**: [https://prateekpur.github.io/reactcalculator_typescript/](https://prateekpur.github.io/reactcalculator_typescript/)
+**Page**: [https://prateekpur.github.io/react-calculator/](https://prateekpur.github.io/react-calculator/)
 
 ### Operations Supported
 
@@ -23,7 +21,7 @@ To get a local copy up and running, follow these steps:
 1. Clone this repository.
 2. Navigate to the project directory:
    ```bash
-   cd reactcalculator_typescript
+   cd react-calculator
    ```
 3. Install dependencies: npm install
 4. Start the development server: npm start
