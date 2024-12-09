@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "./BaseButton";
+import { BaseButton } from "./BaseButton";
 import { useCalcContext } from "../context/Calculator";
 import { evaluate } from "mathjs";
 
@@ -16,5 +16,5 @@ export const ResultButton: React.FC = () => {
     } catch (error) {}
   }
 
-  return <Button text={"="} onClick={getRes} />;
+  return <BaseButton text={"="} onClick={getRes} />;
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "./BaseButton";
+import { BaseButton } from "./BaseButton";
 import { useCalcContext } from "../context/Calculator";
 
 export const BakcspaceButton: React.FC = () => {
@@ -11,5 +11,5 @@ export const BakcspaceButton: React.FC = () => {
     }
   };
 
-  return <Button text={"<-"} onClick={handleDel} />;
+  return <BaseButton text={"<-"} onClick={handleDel} />;
 };

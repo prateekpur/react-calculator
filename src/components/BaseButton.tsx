@@ -7,7 +7,7 @@ type ButtonProps = {
   onClick: (message: string) => void;
 };
 
-export const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
+export const BaseButton: React.FC<ButtonProps> = ({ text, onClick }) => {
   const getColor = (status: string): string => {
     switch (text) {
       case "+":

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "../BaseButton";
+import { BaseButton } from "./BaseButton";
 import { useCalcContext } from "../context/Calculator";
 
 type ActionButtonProps = {
@@ -20,5 +20,5 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text }) => {
     }
   };
 
-  return <Button text={text} onClick={handleClick} />;
+  return <BaseButton text={text} onClick={handleClick} />;
 };
